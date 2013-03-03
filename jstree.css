@@ -9,17 +9,53 @@ ul.jstree {
 	list-style-type: none;
 }
 
-ul.jstree, ul.jstree li {
+ul.jstree, ul.jstree > li {
 	margin: 0px;
 	padding: 0px;
 }
 
 
-ul.jstree ul.jstree {
+ul.jstree > li > span {
+	margin-left: 1em;
+}
+
+ul.jstree > li > ul.jstree {
 	display: none;
 	padding: 0em 0em 0em 1em;
 }
 
-ul.jstree li {
-	border: 1px solid silver;
+ul.jstree > li.open > ul.jstree {
+	display: block;
+}
+
+ul.jstree > li {
+	border-top: 1px solid silver;
+	padding: 0.2em;
+	position:relative;
+}
+
+ul.jstree > li:hover {
+	border-top: 1px solid silver;
+}
+
+ul.jstree > li > a.jstree-expand {
+	display: inline-block;
+	line-height: 0.5em;
+	cursor: pointer;
+	font-size: 1.5em;
+	padding-top: 0.1em;
+	margin-left: 0em;
+	top: 0.2em;
+	position:absolute;
+}
+ul.jstree > li.open > a.jstree-expand {
+	padding-left: 0.14em;
+	padding-right: 0.11em;
+	padding-top: 0em;
+	margin-left: 0.01em;
+	top: 0.2em;
+}
+
+a.jstree-expand:hover {
+
 }
