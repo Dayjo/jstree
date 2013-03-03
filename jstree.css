@@ -1,0 +1,25 @@
+/*-jstree-*/
+
+body {
+	font-family: Arial, Helvetica, Verdana;
+}
+
+/* Reset Styles */
+ul.jstree {
+	list-style-type: none;
+}
+
+ul.jstree, ul.jstree li {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+ul.jstree ul.jstree {
+	display: none;
+	padding: 0em 0em 0em 1em;
+}
+
+ul.jstree li {
+	border: 1px solid silver;
+}
